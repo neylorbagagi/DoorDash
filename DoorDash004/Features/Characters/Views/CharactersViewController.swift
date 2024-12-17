@@ -46,7 +46,9 @@ class CharactersViewController: UIViewController {
     }
     
     private func binding() {
-        viewModel.displayStateSubject.sink { [weak self] displayState in
+        viewModel.displayStateSubject
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] displayState in
             self?.updateDisplayState(state: displayState)
         }.store(in: &cancellables)
     }

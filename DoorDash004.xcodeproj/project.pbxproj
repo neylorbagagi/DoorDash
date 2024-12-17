@@ -46,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1058A5A2D12103500832590 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E1D8C9BB2D119AEF00FB1587 /* DoorDash004.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorDash004.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D8C9BE2D119AEF00FB1587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1D8C9C02D119AEF00FB1587 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +182,7 @@
 				E1D8C9F42D119D7B00FB1587 /* Data+Models */,
 				E1D8CA062D11AF3E00FB1587 /* Glue */,
 				E1D8C9F32D119D7400FB1587 /* Views */,
+				E1058A5A2D12103500832590 /* README.md */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
