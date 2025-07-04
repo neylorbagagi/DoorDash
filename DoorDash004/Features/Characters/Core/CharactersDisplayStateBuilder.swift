@@ -11,7 +11,7 @@ final class CharactersDisplayStateBuilder {
     static func build(from data: CharactersDataModel) -> CharactersDisplayState {
         CharactersDisplayState(
             navigationTitle: "Rick & Morty",
-            charactersCells: Self.makeCharactersCellDisplayState(data: data.characters))
+            charactersCells: makeCharactersCellDisplayState(data: data.characters))
     }
     
     private static func makeCharactersCellDisplayState(data: [CharacterDataModel]) -> [CharactersCellDisplayState] {

@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 enum Event {
-case viewDidLoad
+    case viewDidLoad
     case didSelectCharacter(id: Int)
 }
 

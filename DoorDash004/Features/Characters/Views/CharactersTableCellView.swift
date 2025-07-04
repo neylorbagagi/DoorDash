@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Kingfisher
 import UIKit
 
 final class CharactersTableCellView: UITableViewCell {
@@ -52,7 +51,6 @@ final class CharactersTableCellView: UITableViewCell {
             avatarImageView.heightAnchor.constraint(equalToConstant: 54),
             avatarImageView.topAnchor.constraint(equalTo: stackView.topAnchor, constant: 8),
             avatarImageView.bottomAnchor.constraint(equalTo: stackView.bottomAnchor, constant: -8),
-            
             avatarImageView.trailingAnchor.constraint(equalTo: nameTextLabel.leadingAnchor, constant: -8),
             
             stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
@@ -65,9 +63,8 @@ final class CharactersTableCellView: UITableViewCell {
     func update(displayState: CharactersCellDisplayState) {
         nameTextLabel.text = displayState.name
         
-        if let imageString = displayState.image,
-           let imageUrl = URL(string: imageString) {
-            avatarImageView.kf.setImage(with: imageUrl)
+        if let imageString = displayState.image {
+            avatarImageView.setImage(from: imageString)
         }
     }
 }
